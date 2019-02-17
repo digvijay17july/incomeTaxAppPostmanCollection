@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "47937761-4d29-4567-95c9-dcd851090752",
+		"name": "INCOME_TAX_APP_COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "REGISTER_USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstName\":\"digvijay\",\n\"password\":\"sfsfsf\",\n\"lastName\":\"singh\",\n\"mobileNo\":9650938605,\n\"address\":\"krlgkelrg\",\n\"grossSalary\":5464545,\n\"active\":true,\n\"username\":\"digvijay17july\",\n\"age\":19.0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1/user/registerUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"registerUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CALCULATE_TAX",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1/tax/calculateTax/200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1",
+						"tax",
+						"calculateTax",
+						"200"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
